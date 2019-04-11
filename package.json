@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/hrr37-team-bender/chagilguiab-faq-service#readme",
   "dependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
