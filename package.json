@@ -1,0 +1,19 @@
+{
+  "name": "chagilguiab-faq-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/hrr37-team-bender/chagilguiab-faq-service.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr37-team-bender/chagilguiab-faq-service/issues"
+  },
+  "homepage": "https://github.com/hrr37-team-bender/chagilguiab-faq-service#readme"
+}
