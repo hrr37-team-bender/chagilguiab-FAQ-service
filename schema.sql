@@ -10,6 +10,5 @@ CREATE TABLE stereos (
   features varchar(100),
   question varchar(100),
   answer varchar(100),
-  tech_spec varchar(100),
   PRIMARY KEY (ID)
 );
