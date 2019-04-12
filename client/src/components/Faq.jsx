@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import Features from './Features.jsx';
 
 class Faq extends React.Component {
   constructor (props) {
@@ -20,15 +21,15 @@ class Faq extends React.Component {
           topFiveFeatures.push(results.data[i].features);
         }
         this.setState({data: results.data, topFeatures: topFiveFeatures}, () => {
-          console.log(this.state)
         });
       })
   }
 
   render () {
+    console.log(this.state);
     return (
       <div>
-        <h1>Hello, World!</h1>
+        <Features features={this.state.topFeatures} />
       </div>
     )
   }
