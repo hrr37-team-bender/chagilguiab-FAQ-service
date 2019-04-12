@@ -5,8 +5,8 @@ const seedDatabase = () => {
   stereo_data.forEach(function(obj) {
     let { id, deepfryd_id, features, question, answer } = obj;
 
-    let queryString = `INSERT INTO stereos (deepfryd_id, features, question, answer) VALUES (?, ?, ?, ?)`;
-    db.connection.query(queryString, [id, features, question, answer], (err, results) => {
+    let queryString = `INSERT INTO stereos (id, deepfryd_id, features, question, answer) VALUES (?, ?, ?, ?, ?)`;
+    db.connection.query(queryString, [id, deepfryd_id, features, question, answer], (err, results) => {
       if (err) {
         console.log(err);
         return;
