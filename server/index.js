@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const { getStereo } = require ('../database/index.js');
+const { getInfo } = require ('../database/index.js');
 const morgan = require('morgan');
 const cors = require('cors');
 
@@ -15,8 +15,8 @@ app.use('/products/:id', express.static(staticPath));
 const port = 3005;
 
 app.get('/:id', (req, res) => {
-  let deepfryd_id = req.params.id;
-  getStereo(deepfryd_id, (results) => {
+  let id = req.params.id;
+  getInfo (id, (results) => {
     res.send(results);
   });
 });
