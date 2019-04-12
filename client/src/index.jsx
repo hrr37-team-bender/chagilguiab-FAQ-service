@@ -19,8 +19,8 @@ class FeaturesSpecs extends React.Component {
   }
   render () {
     return (
-      <div onClick={()=> this.toggleList()}>
-        <h3>Features and Specs</h3>
+      <div>
+        <h3 onClick={()=> this.toggleList()}>Features and Specs</h3>
         {this.state.listOpen
           ? <Faq />
           : null
