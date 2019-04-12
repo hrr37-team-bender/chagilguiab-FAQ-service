@@ -4,14 +4,14 @@ const mysqlConfig = require('./config.js');
 const connection = mysql.createConnection(mysqlConfig);
 
 const getInfo = function (id, callback) {
-  let queryString  = `select * from stereos where id = ${id}`;
+  let queryString  = `select * from stereos where deepfryd_id = ${id}`;
   connection.query(queryString, (err, results) => {
     if (err) {
       console.log(err);
       return;
     }
-    let result = results[0];
-    callback(result);
+    // let result = results[0];
+    callback(results);
   });
 };
 
