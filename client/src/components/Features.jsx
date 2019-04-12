@@ -1,11 +1,11 @@
 import React from 'react';
 
 const Features = (props) => (
-  <div>
+  <ul>
     {props.features.map((feature, idx) => {
-      return <div key={idx}>{feature}</div>
+      return <li key={idx}>{feature}</li>
     })}
-  </div>
+  </ul>
 )
 
 export default Features;
