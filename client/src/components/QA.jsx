@@ -18,7 +18,7 @@ class QA extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="qa-div">
       <tr className="qa-panel" onClick={() => this.toggleList()}>
         <span className="question">{this.props.question}</span>
       </tr>

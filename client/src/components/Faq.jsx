@@ -34,7 +34,7 @@ class Faq extends React.Component {
       <div>
         <Features features={this.state.topFeatures} />
         <h5>FAQ</h5>
-        <table>
+        <table className="faq-table">
         {data.map((obj, idx) => {
           return <QA
                   key={idx}
