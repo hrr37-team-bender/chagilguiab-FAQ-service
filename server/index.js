@@ -5,12 +5,11 @@ const { getInfo } = require ('../database/index.js');
 const morgan = require('morgan');
 const cors = require('cors');
 
-app.use(cors());
-app.use(morgan('dev'));
+// app.use(cors());
 app.use(bodyParser());
 app.use(express.static(__dirname + '/../client/dist'));
-const staticPath = `${__dirname}/../client/dist`;
-app.use('/products/:id', express.static(staticPath));
+// const staticPath = `${__dirname}/../client/dist`;
+// app.use('/products/:id', express.static(staticPath));
 
 const port = 3005;
 
