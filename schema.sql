@@ -9,6 +9,6 @@ CREATE TABLE stereos (
   deepfryd_id varchar(100),
   features varchar(100),
   question varchar(100),
-  answer varchar(100),
+  answer varchar(200),
   PRIMARY KEY (ID)
 );
