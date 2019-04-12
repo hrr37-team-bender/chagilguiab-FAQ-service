@@ -33,7 +33,7 @@ class Faq extends React.Component {
     return (
       <div>
         <Features features={this.state.topFeatures} />
-        <h5>FAQ</h5>
+        <h5> &nbsp; &nbsp; FAQ</h5>
         <table className="faq-table">
         {data.map((obj, idx) => {
           return <QA
