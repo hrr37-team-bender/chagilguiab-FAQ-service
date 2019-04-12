@@ -23,7 +23,7 @@ class QA extends React.Component {
         <span className="question">{this.props.question}</span>
       </tr>
         {this.state.listOpen
-        ? <span className="answer">{this.props.answer}</span>
+        ? <span className="answer"><br />{this.props.answer}</span>
         : null
       }
       </div>
