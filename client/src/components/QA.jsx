@@ -18,7 +18,7 @@ class QA extends React.Component {
 
   render () {
     return (
-      <div onClick={() => this.toggleList()}>
+      <div className="panel" onClick={() => this.toggleList()}>
         <h6 className="question">{this.props.question}</h6>
         {this.state.listOpen
         ? this.props.answer
