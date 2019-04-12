@@ -7,8 +7,8 @@ USE deepfryd_faq;
 CREATE TABLE stereos (
   id int NOT NULL AUTO_INCREMENT,
   deepfryd_id varchar(100),
-  features varchar(100),
+  features varchar(200),
   question varchar(100),
-  answer varchar(200),
+  answer varchar(250),
   PRIMARY KEY (ID)
 );
