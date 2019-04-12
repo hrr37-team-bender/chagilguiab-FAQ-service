@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import faq from './components/faq.jsx';
+import Faq from './components/Faq.jsx';
 
-ReactDOM.render(<faq />, document.getElementById('faq') || document.createElement('div'));
+ReactDOM.render(<Faq />, document.getElementById('Faq') || document.createElement('div'));
