@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Features from './Features.jsx';
 import QA from './QA.jsx';
+import styles from '../css-modules/Faq.css';
 
 class Faq extends React.Component {
   constructor (props) {
@@ -32,7 +33,8 @@ class Faq extends React.Component {
     return (
       <div>
         <Features features={this.state.topFeatures} />
-        <h5>FAQ</h5>
+        <h5> &nbsp; &nbsp; FAQ</h5>
+        <table className="faq-table">
         {data.map((obj, idx) => {
           return <QA
                   key={idx}
@@ -40,6 +42,7 @@ class Faq extends React.Component {
                   answer={obj.answer}
           />
         })}
+        </table>
       </div>
     )
   }
