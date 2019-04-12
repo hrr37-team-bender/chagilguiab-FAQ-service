@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Features from './Features.jsx';
 import QA from './QA.jsx';
+import styles from '../css-modules/Faq.css';
 
 class Faq extends React.Component {
   constructor (props) {
