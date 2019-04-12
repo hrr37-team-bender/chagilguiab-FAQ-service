@@ -27,3 +27,5 @@ class QA extends React.Component {
     )
   }
 }
+
+export default QA;
