@@ -20,7 +20,7 @@ class FeaturesSpecs extends React.Component {
   }
   render () {
     return (
-      <div>
+      <div className="main-container">
         <h4 className="panel" onClick={()=> this.toggleList()}>Features and Specs</h4>
         {this.state.listOpen
           ? <Faq />
