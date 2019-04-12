@@ -18,12 +18,14 @@ class QA extends React.Component {
 
   render () {
     return (
-      <div className="qa-panel" onClick={() => this.toggleList()}>
-        <h6 className="question">{this.props.question}</h6>
+      <div>
+      <tr className="qa-panel" onClick={() => this.toggleList()}>
+        <span className="question">{this.props.question}</span>
+      </tr>
         {this.state.listOpen
-        ? this.props.answer
+        ? <span className="answer">{this.props.answer}</span>
         : null
-        }
+      }
       </div>
     )
   }
