@@ -18,7 +18,6 @@ app.get('/', (req, res) => {
 
 app.get('/:id', (req, res) => {
   let id = req.params.id;
-  console.log(`datatype of ${id} is ${typeof id}`)
   getInfo (id, (results) => {
     res.send(results);
   });

@@ -1,12 +1,15 @@
 import React from 'react';
 import axios from 'axios';
+import Features from './Features.jsx';
+import QA from './QA.jsx';
 
 class Faq extends React.Component {
   constructor (props) {
     super(props)
 
     this.state = {
-      data: ''
+      data: '',
+      topFeatures: []
     }
   }
 
@@ -14,16 +17,29 @@ class Faq extends React.Component {
     let path = window.location.pathname.slice(9);
     axios.get(path)
       .then((results) => {
-        this.setState({data: results.data}, () => {
-          console.log(this.state)
-        });
+        let topFiveFeatures = [];
+        for (let i = 0; i < 5; i++) {
+          if (results.data[i]) {
+            topFiveFeatures.push(results.data[i].features);
+          }
+        }
+        this.setState({data: results.data, topFeatures: topFiveFeatures});
       })
   }
 
   render () {
+    let data = this.state.data || [];
     return (
       <div>
-        <h1>Hello, World!</h1>
+        <Features features={this.state.topFeatures} />
+        <h5>FAQ</h5>
+        {data.map((obj, idx) => {
+          return <QA
+                  key={idx}
+                  question={obj.question}
+                  answer={obj.answer}
+          />
+        })}
       </div>
     )
   }

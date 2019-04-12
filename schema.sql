@@ -5,10 +5,9 @@ CREATE DATABASE deepfryd_faq;
 USE deepfryd_faq;
 
 CREATE TABLE stereos (
-  id int NOT NULL AUTO_INCREMENT,
+  id int NOT NULL,
   deepfryd_id varchar(100),
   features varchar(200),
   question varchar(100),
-  answer varchar(250),
-  PRIMARY KEY (ID)
+  answer varchar(250)
 );
