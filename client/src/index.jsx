@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Faq from './components/Faq.jsx';
+import styles from './css-modules/index.css';
 
 class FeaturesSpecs extends React.Component {
   constructor(props) {
@@ -19,8 +20,8 @@ class FeaturesSpecs extends React.Component {
   }
   render () {
     return (
-      <div>
-        <h3 onClick={()=> this.toggleList()}>Features and Specs</h3>
+      <div className="main-container">
+        <h4 className="container-panel" onClick={()=> this.toggleList()}>Features and Specs</h4>
         {this.state.listOpen
           ? <Faq />
           : null

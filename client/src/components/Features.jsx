@@ -1,10 +1,13 @@
 import React from 'react';
+import styles from '../css-modules/Features.css';
 
 const Features = (props) => (
-  <div>
-    {props.features.map((feature, idx) => {
-      return <div key={idx}>{feature}</div>
-    })}
+  <div className="features-div">
+    <ul className="features-ul">
+      {props.features.map((feature, idx) => {
+        return <li key={idx}>{feature}</li>
+      })}
+    </ul>
   </div>
 )
 

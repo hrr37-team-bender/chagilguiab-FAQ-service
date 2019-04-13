@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../css-modules/QA.css';
 
 class QA extends React.Component {
   constructor(props) {
@@ -17,12 +18,14 @@ class QA extends React.Component {
 
   render () {
     return (
-      <div onClick={() => this.toggleList()}>
-        <h6>{this.props.question}</h6>
+      <div className="qa-div">
+      <tr className="qa-panel" onClick={() => this.toggleList()}>
+        <span className="question">{this.props.question}</span>
+      </tr>
         {this.state.listOpen
-        ? this.props.answer
+        ? <span className="answer"><br />{this.props.answer}</span>
         : null
-        }
+      }
       </div>
     )
   }
